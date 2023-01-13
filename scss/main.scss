@@ -2,7 +2,15 @@
 @import './variables';
 
 @function weight($weight-name){
-	@return map-get($font-weights,$weight-name)
+	@return map-get($font-weights,$weight-name);
+}
+
+
+@mixin flexCenter($direction){
+	flex-direction: $direction;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 $font-weights:(
@@ -19,6 +27,7 @@ body{
 }
 
 .main{
+@include flexCenter(row);
  width:80%;
  margin :0 auto;
  & .secondary__paragraph{
