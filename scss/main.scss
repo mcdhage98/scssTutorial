@@ -7,9 +7,27 @@ $font-weights:(
 	"medium":500,
 	"bold":700
 );
+//maps
 
 body{
-	background-color: $primary-color;
+	background-color: $primary-color; //scss variables
 	color:$text-color;
-	font-weight: map-get($font-weights,bold)
+	
+}
+
+.main{
+ width:80%;
+ margin :0 auto;
+ & .secondary__paragraph{
+	color: $accent-color;
+ }
+
+ //nesting
+ &__paragraph{
+	font-weight: map-get($font-weights,bold);
+
+	&:hover{
+		color:pink;
+	}
+ }
 }
