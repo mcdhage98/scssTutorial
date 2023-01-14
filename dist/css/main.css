@@ -20,11 +20,14 @@ body {
 .main .secondary__paragraph {
   color: #ff652f;
 }
-.main__paragraph {
+.main__paragraph, .main__paragraph2 {
   font-weight: 700;
 }
-.main__paragraph:hover {
+.main__paragraph:hover, .main__paragraph2:hover {
   color: pink;
+}
+.main__paragraph2:hover {
+  color: #ff652f;
 }
 @media (max-width: 800px) {
   .main {
