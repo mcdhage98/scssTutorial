@@ -65,6 +65,12 @@ body{
 	&:hover{
 		color: $accent-color;
 	}
+
+
+	//operators in scss
+	width:100%-20%
+	//in css u can do with diff types ex
+	//width:calc(100% - 2rem ) but in scss only one type is supported
 }
 
  @include mobile{

@@ -26,6 +26,9 @@ body {
 .main__paragraph:hover, .main__paragraph2:hover {
   color: pink;
 }
+.main__paragraph2 {
+  width: 80%;
+}
 .main__paragraph2:hover {
   color: #ff652f;
 }
